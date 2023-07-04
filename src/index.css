@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+canvas {
+  /* padding: 10px; */
+  box-shadow: 0px 5px 15px rgb(126, 124, 124);
+  margin: 20px;
+}
+
+/* header */
+
+.background_header{
+  box-shadow: 0px 5px 15px rgb(126, 124, 124);
+}
+
+header {
+  color: rgb(38, 107, 30);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.header_content {
+  display: flex;
+  align-items: center;
+}
+
+.logo_color {
+  color: white;
+}
+
+/* body */
+
+body {
+  text-align: center;
+  user-select: none;
+}
+
+.essay-content {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10%;
+  display: table;
+  /* background: url('../img/blue-screen.jpg'); */
+  width: 1024px;
+  height: 500px;
+  
+}
+
+.essay-text {
+  color: white;
+  font-family: "Consolas";
+  font-size: 24px;
+  font-weight: 100;
+  width: 80%;
+  margin-left: 125px;
+  margin-right: auto;
+  text-align: left;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10%;
+  display: table;
+}
+
+.menu {
+  padding: 10px;
+  border: 1px solid silver;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(126, 124, 124);
+}
+
+.background_header {
+  background-color: rgb(38, 107, 30);
+}
+
+a { 
+  text-decoration: none;
+  color: rgb(38, 107, 30);
+  padding: 2px;
+  transition: 0.25s linear;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* canvas */
+
+.graphs_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#funcList {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.f-wrap {
+  width: fit-content;
+  padding: 3px;
+  margin-top: 5px;
+  border: solid 1px slategray;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.g-i-1 {
+  width: 150px;
+  height: 30px;
+}
+
+.g-i-2 {
+  width: 40px;
+  height: 34px;
+}
+
+.g-i-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background-color: red;
+}
+
+.g-i-4 {
+  width: 34px;
+  height: 30px;
+}
+
+.g-i-5 {
+  width: 34px;
+  height: 30px;
+}
+
+.g-i-6 {
+  width: fit-content;
+  height: fit-content;
+}
+
+#addFunction {
+  width: 300px;
+}
+
+/* canlculator */
+
+.calc-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calc-main-block {
+  margin-right: 20px;
+}
+
+.calc-input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+textarea {
+  width: 350px;
+  height: 100px;
+  border: solid 2px rgb(33, 73, 29);
+  border-radius: 5px;
+  resize: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 10px rgb(126, 124, 124);
+}
+
+button {
+  background-color: rgb(44, 156, 31);
+  color: white;
+  padding: 5px;
+  width: 100px;
+  height: 35px;
+  box-shadow: 0px 0px 10px rgb(126, 124, 124);
+  border: solid 2px rgb(33, 73, 29);
+  background-color: rgb(44, 156, 31);
+  border-radius: 5px;
+  margin: 5px
+}
+
+button:hover {
+  color: black;
+}
+
+input {
+  display: flex;
+  width: 200px;
+  height: 20px;
+  border: solid 2px rgb(33, 73, 29);
+  border-radius: 5px;
+  resize: none;
+  margin: 5px;
+  /* box-shadow: 0px 0px 10px rgb(126, 124, 124); */
+}
+
+input[class="list3D"]:checked
+
+.input-list {
+  border: 2px;
+}
+
+.c3d {
+  display: flex;
+  align-items: center;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding-left: 20%;
+}

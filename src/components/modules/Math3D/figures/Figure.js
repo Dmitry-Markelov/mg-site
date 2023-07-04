@@ -1,0 +1,53 @@
+import {Point} from '../entities'
+
+class Figure {
+    constructor(points = [], edges = [], polygons = [], center = new Point(), color = '#e8649b') {
+        this.points = points;
+        this.edges = edges;
+        this.polygons = polygons;
+        this.color = color;
+        this.center = center;
+        this.animations = [];
+    }
+    dropAnimation() {
+        this.animations = [];
+    }
+    setAnimation(method, value, center) {
+        this.animations.push({
+            method,
+            value,
+            center: center ? center : this.center
+        });
+    }
+    updateAnimation() {
+
+    }
+    doAnimation(math3D) {
+        this.animations.forEach(anim => {
+            const t2 = math3D[anim.method](anim.value);
+            const t1 = math3D.move({
+                dx: -anim.center.x,
+                dy: -anim.center.y,
+                dz: -anim.center.z,
+            });
+            
+            const t3 = math3D.move({
+                dx: anim.center.x,
+                dy: anim.center.y,
+                dz: anim.center.z,
+            });
+
+            this.points.forEach(point => {
+                math3D.transform(t1, point);
+                math3D.transform(t2, point);
+                math3D.transform(t3, point);
+            });
+
+            math3D.transform(t1, this.center);
+            math3D.transform(t2, this.center);
+            math3D.transform(t3, this.center);
+        });
+    }
+}
+
+export default Figure;
