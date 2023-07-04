@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mg-site/static/css/main.8710ca11.css",
+    "main.js": "/mg-site/static/js/main.f6f50c15.js",
+    "static/js/787.c9821c09.chunk.js": "/mg-site/static/js/787.c9821c09.chunk.js",
+    "index.html": "/mg-site/index.html",
+    "main.8710ca11.css.map": "/mg-site/static/css/main.8710ca11.css.map",
+    "main.f6f50c15.js.map": "/mg-site/static/js/main.f6f50c15.js.map",
+    "787.c9821c09.chunk.js.map": "/mg-site/static/js/787.c9821c09.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8710ca11.css",
+    "static/js/main.f6f50c15.js"
+  ]
+}
